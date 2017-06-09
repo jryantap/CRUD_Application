@@ -12,7 +12,7 @@ public class ProductManagementApplication {
 
     //read input from keyboard
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    //call our dao methods
+    //call our dao (data access object) methods
     static ProductManagementDAO dao = new ProductManagementDAO();
 
     public static void main(String[] args) throws Exception

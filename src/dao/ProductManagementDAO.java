@@ -23,10 +23,8 @@ public class ProductManagementDAO {
             {
                 Product product = new Product(rs.getString("prod_id"), rs.getString("prod_name"), rs.getInt("prod_price"));
                 productList.add(product);
-
             }
             DBUtil.closeConnection(conn);  //close connection
-
         }
         catch(Exception e)
         {
@@ -72,8 +70,6 @@ public class ProductManagementDAO {
             ps.setString(2, product.getProductName());
             ps.setInt(3, product.getProductPrice());
             status = ps.executeUpdate();  //if successful status should return 1
-
-
         }
         catch(Exception e)
         {
@@ -82,6 +78,7 @@ public class ProductManagementDAO {
         return status;
     }
 
+    //updates a product already in the table
     public int updateProduct(Product product)
     {
         int status = 0;
@@ -94,7 +91,6 @@ public class ProductManagementDAO {
             ps.setInt(2, product.getProductPrice());
             ps.setString(3, product.getProductid());
             status = ps.executeUpdate();  //if successful status should return 1
-
         }
         catch(Exception e)
         {
@@ -103,6 +99,7 @@ public class ProductManagementDAO {
         return status;
     }
 
+    //deltes product already in the table
     public int deleteProduct(String productId)
     {
         int status = 0;
