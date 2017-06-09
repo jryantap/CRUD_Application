@@ -161,7 +161,13 @@ public class ProductManagementApplication {
 
     public static void searchProduct() throws Exception
     {
-
+        System.out.println("------------------------------------------------");
+        System.out.println("Enter Product ID:");
+        System.out.println("------------------------------------------------");
+        String productId = br.readLine();
+        Product product = dao.getProductByid(productId);
+        displayProduct(product);
+        System.out.println("\n");
     }
 
     public static void displayProduct(Product product)
