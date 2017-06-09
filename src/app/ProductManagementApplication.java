@@ -57,6 +57,7 @@ public class ProductManagementApplication {
 
                 case "F":
                     System.out.println("******************************THANK YOU********************");
+                    System.exit(0);
                     break;
 
                 default:
@@ -159,6 +160,7 @@ public class ProductManagementApplication {
 
     }
 
+    //ask user for productId and use dao method to display product
     public static void searchProduct() throws Exception
     {
         System.out.println("------------------------------------------------");
