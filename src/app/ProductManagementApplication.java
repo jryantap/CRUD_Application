@@ -128,7 +128,7 @@ public class ProductManagementApplication {
         int productPrice = Integer.parseInt(br.readLine());
         //after user enters values, store them in a Product variable
         Product product = new Product(productId, productName,productPrice);
-        int status = dao.addProduct(product);
+        int status = dao.updateProduct(product);
         if(status ==1 )
         {
             System.out.println("Product updated successfully");
