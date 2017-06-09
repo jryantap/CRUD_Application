@@ -110,6 +110,7 @@ public class ProductManagementApplication {
         System.out.println("\n");
     }
 
+    //this method ask the user to enter the product id and enter new name and new price
     public static void updateProduct() throws Exception
     {
         System.out.println("------------------------------------------------");
@@ -139,12 +140,26 @@ public class ProductManagementApplication {
 
     }
 
-    public static void deleteProduct()
+    public static void deleteProduct() throws Exception
     {
+        System.out.println("------------------------------------------------");
+        System.out.println("Enter Product ID:");
+        System.out.println("------------------------------------------------");
+        String productId = br.readLine();
+        int status = dao.deleteProduct(productId);
+        if(status == 1 )
+        {
+            System.out.println("Product deleted successfully");
+        }
+        else
+        {
+            System.out.println("ERROR while deleting product");
+        }
+        System.out.println("\n");
 
     }
 
-    public static void searchProduct()
+    public static void searchProduct() throws Exception
     {
 
     }
