@@ -9,7 +9,7 @@ import pojo.Product;
 public class ProductManagementDAO {
 
     //get all products method.  used List instead of ArrayList so it's better code management
-    //just incase we want to change the ArrayList to a LinkedList, we don't have to change the code the much
+    //incase we want to change productList ArrayList to a LinkedList, we don't have to change the jdbc code that much
     public List<Product> getAllProducts()
     {
         List<Product> productList = new ArrayList<Product>();
