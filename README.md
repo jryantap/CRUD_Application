@@ -6,3 +6,4 @@ with proper log in.
 user-name: system
 password: system
 ```
+.. or just change the connection driver user and password info in the DBUtil class.  
