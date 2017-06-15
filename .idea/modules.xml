@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D://Project-Management-CRUD-Application/Project-Management-CRUD-Application.iml" filepath="D://Project-Management-CRUD-Application/Project-Management-CRUD-Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project-Management-CRUD-Application.iml" filepath="$PROJECT_DIR$/Project-Management-CRUD-Application.iml" />
     </modules>
   </component>
 </project>
