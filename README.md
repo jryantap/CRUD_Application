@@ -3,6 +3,6 @@ This console application lets the user view, add, update, delete and search the 
 In order to run this file, [Oracle Database](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html) must be running
 with proper log in. <br />
 <br />
-user-name: system
-password: system
+user-name: system<br />
+password: system<br />
 <br />
